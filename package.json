@@ -1,0 +1,38 @@
+{
+  "name": "wishee",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "deploy": "gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisheee/wishee.git"
+  },
+  "author": "wishee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wisheee/wishee/issues"
+  },
+  "homepage": "https://github.com/wisheee/wishee#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0",
+    "babelify": "^10.0.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-bro": "^2.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-image": "^6.3.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webserver": "^0.9.1",
+    "sass": "^1.49.7",
+    "uglifyify": "^5.0.2"
+  }
+}
