@@ -76,6 +76,7 @@ const img = () =>
     .pipe(gulp.dest(routes.img.dest));
 
 const watch = () => {
+  gulp.watch(routes.html.watch, html);
   gulp.watch(routes.scss.watch, styles);
   gulp.watch(routes.js.watch, js);
   gulp.watch(routes.img.src, img);
