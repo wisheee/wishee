@@ -30,7 +30,7 @@ const routes = {
     src: 'src/images/*',
     dest: 'build/images'
   }
-}
+};
 
 const clean = () => del(['build']);
 
@@ -84,7 +84,7 @@ const watch = () => {
 
 const prepare = gulp.series([clean, img]);
 const assets = gulp.series([html, styles, js]);
-const live = gulp.series([webserver, watch]);
+const live = gulp.parallel([webserver, watch]);
 
 export const build = gulp.series([prepare, assets]);
 export const dev = gulp.series([build, live]);
